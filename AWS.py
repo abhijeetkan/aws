@@ -53,9 +53,7 @@ def get_weather_data():
     return speed, wind_direction
 
 while True:
-    pressure = bmpsensor.readBmp180()
-    altitude = bmpsensor.readBmp180()
-    #Press = pressure/100
+    pressure, altitude = bmpsensor.readBmp180()
     rainfall = total_rainfall
     total_rainfall = 0
     temperature, humidity = read_dht11()
