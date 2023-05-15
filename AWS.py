@@ -18,7 +18,7 @@ while True:
         print("No internet connection. Retryingin 5 seconds...")
         time.sleep(5)
 
-write_key = 'KC17Q0YLO5JLWSC6'
+write_key = 'KC17Q0YLO5JLWSC6' #insert_your_own_key_here
 THINGSPEAK_API_ENDPOINT = f"https://api.thingspeak.com/update?api_key={write_key}&field1=%s&field2=%s&field3=%s&field4=%s&field5=%s&field6=%s&field7=%s"
 dht_pin = 14
 BUCKET_SIZE = 0.2794 
